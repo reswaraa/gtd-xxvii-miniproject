@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'IT GTD Miniproject',
   description: 'IT GTD XXVII Miniproject Assignment',
   icons: {
-    icon: '/profile.png',
+    icon: '/favicon.png',
   },
 };
 
