@@ -127,11 +127,13 @@ export default function Home() {
         </div>
         <button
           onClick={addTask}
-          className="w-full bg-blue-500 text-md text-white py-2 rounded-md hover:bg-blue-600"
+          className="w-full bg-blue-500 text-md text-white py-2 mb-9 rounded-md hover:bg-blue-600"
         >
           Add Task
         </button>
-
+        <div className="w-full bg-white text-md text-gray-600 py-2 rounded-md text-center">
+          Filter Tasks by Categories
+        </div>
         {/* Filtering Section */}
         <div className="mt-4 flex space-x-2">
           <select
