@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-gray-100 p-8">
       <div className="container mx-auto">
-        <h1 className="text-3xl font-bold text-center mb-10 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-10 text-gray-800">
           IT GTD XXVII Miniproject Assignment
         </h1>
 
@@ -39,19 +39,19 @@ export default function Home() {
               key={project.title}
               className="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow"
             >
-              <h2 className="text-xl font-semibold mb-4 text-gray-700">
+              <h2 className="text-2xl font-semibold mb-4 text-gray-700">
                 {project.title}
               </h2>
-              <p className="text-gray-600 mb-6 text-[0.85rem]">
+              <p className="text-gray-600 mb-6 text-sm">
                 {project.description}
               </p>
               <div className="flex flex-row  items-center justify-between">
-                <p className="text-gray-600 text-[0.85rem] items-center">
+                <p className="text-gray-600 text-sm items-center">
                   Due: {project.deadline}
                 </p>
                 <Link
                   href={project.route}
-                  className="bg-blue-500 text-white px-4 py-2 text-[0.85rem] rounded hover:bg-blue-600 transition-colors"
+                  className="bg-blue-500 text-white px-4 py-2 text-sm rounded hover:bg-blue-600 transition-colors"
                 >
                   View Project
                 </Link>

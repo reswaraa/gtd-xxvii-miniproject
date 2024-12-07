@@ -50,7 +50,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
             onChange={(e) =>
               setEditedTask({ ...editedTask, title: e.target.value })
             }
-            className="w-full text-gray-600 text-sm px-2 py-1 border rounded"
+            className="w-full text-gray-600 text-md px-2 py-1 border rounded"
             placeholder="Task Title"
           />
           <textarea
@@ -58,7 +58,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
             onChange={(e) =>
               setEditedTask({ ...editedTask, description: e.target.value })
             }
-            className="w-full text-gray-600 text-sm px-2 py-1 border rounded"
+            className="w-full text-gray-600 text-md px-2 py-1 border rounded"
             placeholder="Task Description"
           />
           <div className="flex space-x-2">
@@ -70,7 +70,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
                   priority: e.target.value as Task['priority'],
                 })
               }
-              className="w-full text-gray-600 text-sm px-2 py-1 border rounded"
+              className="w-full text-gray-600 text-md px-2 py-1 border rounded"
             >
               <option value="low">Low Priority</option>
               <option value="medium">Medium Priority</option>
@@ -84,7 +84,7 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
                   status: e.target.value as Task['status'],
                 })
               }
-              className="w-full text-gray-600 text-sm px-2 py-1 border rounded"
+              className="w-full text-gray-600 text-md px-2 py-1 border rounded"
             >
               <option value="todo">To Do</option>
               <option value="in-progress">In Progress</option>
@@ -94,13 +94,13 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
           <div className="flex justify-end space-x-2">
             <button
               onClick={handleSave}
-              className="bg-green-500 text-white text-sm px-3 py-1 rounded flex items-center"
+              className="bg-green-500 text-white text-md px-3 py-1 rounded flex items-center"
             >
               <CheckIcon className="mr-1 text-sm" /> Save
             </button>
             <button
               onClick={handleCancel}
-              className="bg-red-500 text-white px-3 text-sm py-1 rounded flex items-center"
+              className="bg-red-500 text-white px-3 text-md py-1 rounded flex items-center"
             >
               <Cross1Icon className="mr-1 text-sm" /> Cancel
             </button>
@@ -113,18 +113,18 @@ const TaskItem: React.FC<TaskItemProps> = ({ task, onDelete, onEdit }) => {
   return (
     <div className="bg-white shadow-md rounded-lg p-4 mb-4 flex justify-between items-center">
       <div>
-        <h3 className="text-md text-gray-800 font-semibold">{task.title}</h3>
-        <p className="text-gray-600 text-xs">{task.description}</p>
+        <h3 className="text-xl text-gray-800 font-semibold">{task.title}</h3>
+        <p className="text-gray-600 text-md">{task.description}</p>
         <div className="flex space-x-2 mt-2">
           <span
-            className={`px-2 py-1 rounded text-xs ${getPriorityColor(
+            className={`px-2 py-1 rounded text-sm ${getPriorityColor(
               task.priority
             )}`}
           >
             Priority: {task.priority.toUpperCase()}
           </span>
           <span
-            className={`px-2 py-1 rounded text-xs ${
+            className={`px-2 py-1 rounded text-sm ${
               task.status === 'todo'
                 ? 'bg-gray-100 text-gray-800'
                 : task.status === 'in-progress'

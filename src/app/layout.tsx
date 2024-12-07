@@ -16,6 +16,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: 'IT GTD Miniproject',
   description: 'IT GTD XXVII Miniproject Assignment',
+  icons: {
+    icon: '/images/profile.png',
+  },
 };
 
 export default function RootLayout({

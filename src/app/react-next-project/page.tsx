@@ -75,7 +75,7 @@ export default function Home() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl text-gray-800 font-bold mb-6 text-center">
+      <h1 className="text-4xl text-gray-800 font-bold mb-6 text-center">
         Task Management App
       </h1>
 
@@ -85,7 +85,7 @@ export default function Home() {
           placeholder="Task Title"
           value={newTask.title || ''}
           onChange={(e) => setNewTask({ ...newTask, title: e.target.value })}
-          className="w-full px-3 py-2 border text-gray-600 text-sm rounded-md mb-2"
+          className="w-full px-3 py-2 border text-gray-600 text-md rounded-md mb-2"
         />
         <textarea
           placeholder="Task Description"
@@ -93,7 +93,7 @@ export default function Home() {
           onChange={(e) =>
             setNewTask({ ...newTask, description: e.target.value })
           }
-          className="w-full px-3 py-2 border text-sm text-gray-600 rounded-md mb-2"
+          className="w-full px-3 py-2 border text-md text-gray-600 rounded-md mb-2"
         />
         <div className="flex space-x-2 mb-4">
           <select
@@ -104,7 +104,7 @@ export default function Home() {
                 priority: e.target.value as Task['priority'],
               })
             }
-            className="w-full px-3 text-sm text-gray-600 py-2 border rounded-md"
+            className="w-full px-3 text-md text-gray-600 py-2 border rounded-md"
           >
             <option value="low">Low Priority</option>
             <option value="medium">Medium Priority</option>
@@ -118,7 +118,7 @@ export default function Home() {
                 status: e.target.value as Task['status'],
               })
             }
-            className="w-full text-sm text-gray-600 px-3 py-2 border rounded-md"
+            className="w-full text-md text-gray-600 px-3 py-2 border rounded-md"
           >
             <option value="todo">To Do</option>
             <option value="in-progress">In Progress</option>
@@ -127,7 +127,7 @@ export default function Home() {
         </div>
         <button
           onClick={addTask}
-          className="w-full bg-blue-500 text-sm text-white py-2 rounded-md hover:bg-blue-600"
+          className="w-full bg-blue-500 text-md text-white py-2 rounded-md hover:bg-blue-600"
         >
           Add Task
         </button>
@@ -142,7 +142,7 @@ export default function Home() {
                 status: (e.target.value as Task['status']) || undefined,
               })
             }
-            className="w-full px-3 text-gray-600 text-sm py-2 border rounded-md"
+            className="w-full px-3 text-gray-600 text-md py-2 border rounded-md"
           >
             <option value="">All Statuses</option>
             <option value="todo">To Do</option>
@@ -157,7 +157,7 @@ export default function Home() {
                 priority: (e.target.value as Task['priority']) || undefined,
               })
             }
-            className="w-full px-3 py-2 text-sm text-gray-600 border rounded-md"
+            className="w-full px-3 py-2 text-md text-gray-600 border rounded-md"
           >
             <option value="">All Priorities</option>
             <option value="low">Low Priority</option>
@@ -180,7 +180,7 @@ export default function Home() {
       <section className="mt-8">
         <Link
           href="/"
-          className="bg-blue-500 text-white text-[0.8rem] px-4 py-2 rounded-md hover:bg-blue-600"
+          className="bg-blue-500 text-white text-md px-4 py-2 rounded-md hover:bg-blue-600"
         >
           Back to Home
         </Link>
