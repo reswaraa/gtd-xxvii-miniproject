@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="mt-12 text-center text-gray-500">
           <p>
-            These miniprojects are designed to help committee members learn and
+            These miniprojects are designed to help sub-committee learn and
             practice web development skills through hands-on experience.
           </p>
         </div>
