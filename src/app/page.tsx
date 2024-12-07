@@ -40,7 +40,7 @@ export default function Home() {
               </p>
               <div className="flex flex-row  items-center justify-between">
                 <p className="text-gray-600 text-[0.85rem] items-center">
-                  Deadline: {project.deadline}
+                  Due: {project.deadline}
                 </p>
                 <Link
                   href={project.route}
