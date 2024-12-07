@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from 'react';
 import Link from 'next/link';
-export default function CounterComponent() {
+export default function CounterProject() {
   const [count, setCount] = useState(0);
   const [error, setError] = useState('');
 

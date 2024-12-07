@@ -7,15 +7,22 @@ export default function Home() {
       title: 'HTML & CSS Miniproject',
       description:
         'A project focusing on fundamental web using HTML and CSS. Your task is to replicate this website. It doesnt have to be exactly the same, the important thing is to try CSS attributes like position, grid, flex, and media query. To understand tailwind CSS better, you can try to use tailwind after the usual CSS.',
-      deadline: '15 December 2024',
+      deadline: '16 December 2024',
       route: '/html-css-project',
     },
     {
       title: 'JavaScript Miniproject',
       description:
         'A project demonstrating JavaScript functionality. Your task is to replicate this website and the functionality inside. It doesnt have to be exactly the same, the important thing is to try javascript functionality like getElement, addEventListener, etc.',
-      deadline: '15 December 2024',
+      deadline: '20 December 2024',
       route: '/javascript-project',
+    },
+    {
+      title: 'React or Next JS Miniproject',
+      description:
+        'Your task is to create a single-page app using React or Next.js (for now, just use react, which is simpler) that demonstrates the following functions: create, update, edit and delete. You can create any app you want. Below is just for your reference if you want to follow along.',
+      deadline: '8 January 2025',
+      route: '/react-next-project',
     },
   ];
 
