@@ -7,7 +7,7 @@ export default function Home() {
       title: 'HTML & CSS Miniproject',
       description:
         'A project focusing on fundamental web using HTML and CSS. Your task is to replicate this website. It doesnt have to be exactly the same, the important thing is to try CSS attributes like position, grid, flex, and media query. To understand tailwind CSS better, you can try to use tailwind after the usual CSS.',
-      deadline: '16 December 2024',
+      deadline: '17 December 2024',
       route: '/html-css-project',
     },
     {
